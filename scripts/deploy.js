@@ -11,6 +11,7 @@ const main = async () => {
     console.log('TipJar address: ', portal.address);
 };
 
+
 const runMain = async () => {
     try {
         await main();
