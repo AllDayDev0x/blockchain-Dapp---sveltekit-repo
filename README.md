@@ -20,18 +20,6 @@ Lastly, you'll learn how to deploy your dapp to the blockchain.
 > This course was recorded pointing to the version 1.0.0-next.437 of Svelte kit 
 > It will be updated after sveltekit reach version 1.0.0 
 
-## 👨🏻‍💻 Course summary
-
-Ok. Are you ready? Cool, this will be quite a journey but fun and full of challenges. A few this that you'll be able to learn.
-
-- How to setup SvelteKit.
-- How write an smart contract with Solidity.
-- How to configure an Ethereum development environment.
-- How to test an smart contract using javascript.
-- How to connect a web application to a wallet.
-- How to interact with a deployed smart contract.
-- How to deploy an smart contract.
-
 
 This will:
 
