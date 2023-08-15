@@ -26,7 +26,6 @@ describe("TipJar", function () { //describe the main test
         const tx = await contract.connect(sender).sendTip('message', 'name', { value: ethers.utils.parseEther("0.001") });
         await tx.wait();
 
-
         const newBalance = await ethers.provider.getBalance(contract.address) // Get the new balance of the contract
         const newSenderBalance = await sender.getBalance();
         expect(newBalance).to.be.above(balance) // Check that the new balance if greater than before
@@ -50,7 +49,6 @@ describe("TipJar", function () { //describe the main test
         expect(tips[1].message).to.equal('2nd message')
         // The amount of the second element of the tips array should be the same as the transaction sent
         expect(tips[1].amount).to.be.equal(amount)
-
     })
 
     it('should fail to send eth bigger than the balance', async function () {
@@ -86,8 +84,6 @@ describe("TipJar", function () { //describe the main test
         const newOwnerBalance = await owner.getBalance()// Get the new balance of the owner
         const contractBalance = await ethers.provider.getBalance(contract.address) // Get the account balance of the contract 
 
-
-
         expect(newOwnerBalance).to.be.above(ownerBalance) // Check that the new balance if greater than before
         expect(contractBalance).to.be.equal(0); // Check that the contract balance is zero
 
@@ -104,7 +100,4 @@ describe("TipJar", function () { //describe the main test
         await expect(contract.connect(otherUser).withdraw()).to.be.reverted;
 
     })
-
-
-
 });
